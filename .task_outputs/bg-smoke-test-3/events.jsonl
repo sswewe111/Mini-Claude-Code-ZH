@@ -1,3 +1,0 @@
-{"time": "2026-07-07T22:49:59+08:00", "event": "start", "bg_id": "bg_000001", "command": "Start-Sleep -Seconds 1; Write-Output 123", "owner": "main"}
-{"time": "2026-07-07T22:50:03+08:00", "event": "complete", "bg_id": "bg_000001", "exit_code": 0, "summary": "shell: powershell command: Start-Sleep -Seconds 1; Write-Output 123 exit_code: 0 stdout: 123"}
-{"time": "2026-07-07T22:50:04+08:00", "event": "notify", "bg_id": "bg_000001", "status": "completed"}

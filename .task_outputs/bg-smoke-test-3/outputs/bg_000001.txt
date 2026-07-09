@@ -1,8 +1,0 @@
-shell: powershell
-
-command: Start-Sleep -Seconds 1; Write-Output 123
-
-exit_code: 0
-
-stdout:
-123
