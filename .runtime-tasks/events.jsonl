@@ -1,6 +1,0 @@
-{"time": "2026-07-07T22:50:21+08:00", "event": "start", "bg_id": "bg_000001", "command": "Start-Sleep -Seconds 1; Write-Output hook", "owner": "smoke"}
-{"time": "2026-07-07T22:50:25+08:00", "event": "complete", "bg_id": "bg_000001", "exit_code": 0, "summary": "shell: powershell command: Start-Sleep -Seconds 1; Write-Output hook exit_code: 0 stdout: hook"}
-{"time": "2026-07-07T22:50:26+08:00", "event": "notify", "bg_id": "bg_000001", "status": "completed"}
-{"time": "2026-07-07T22:57:33+08:00", "event": "start", "bg_id": "bg_000002", "command": "Start-Sleep -Seconds 5; Write-Output \"background done\"", "owner": "main"}
-{"time": "2026-07-07T22:57:41+08:00", "event": "complete", "bg_id": "bg_000002", "exit_code": 0, "summary": "shell: powershell command: Start-Sleep -Seconds 5; Write-Output \"background done\" exit_code: 0 stdout: background done"}
-{"time": "2026-07-07T22:57:42+08:00", "event": "notify", "bg_id": "bg_000002", "status": "completed"}
