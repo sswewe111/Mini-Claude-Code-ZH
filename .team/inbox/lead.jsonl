@@ -1,1 +1,0 @@
-{"id": "team_msg_312f99b4642a", "sender": "auto_alice", "recipient": "lead", "type": "error", "content": "teammate auto_alice 执行失败: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}", "created_at": "2026-07-09T17:55:02+08:00", "correlation_id": null, "metadata": {}}
