@@ -1,0 +1,11 @@
+2026-07-08 20:51:29,061 - agent - INFO - memory_manager.py:113 - 开始 LLM Memory 召回: candidates=2, timeout=8.0s
+2026-07-08 20:51:29,062 - agent - WARNING - memory_manager.py:126 - LLM Memory 召回失败，回退关键词匹配: simulated timeout
+2026-07-08 20:52:59,691 - agent - INFO - skill_manager.py:106 - 技能目录扫描完成: count=6
+2026-07-08 20:52:59,815 - agent - INFO - agent_loop.py:182 - Agent 程序启动
+2026-07-08 20:52:59,815 - agent - INFO - builtin_hooks.py:13 - [hook:SessionStart] Agent 会话启动
+2026-07-08 20:52:59,817 - agent - INFO - builtin_hooks.py:19 - [hook:SessionStart] Memory 已初始化
+2026-07-08 20:53:01,865 - agent - INFO - agent_loop.py:60 - 开始第 1 轮 Agent 循环
+2026-07-08 20:53:01,881 - agent - INFO - memory_manager.py:113 - 开始 LLM Memory 召回: candidates=2, timeout=8.0s
+2026-07-08 20:53:27,974 - agent - WARNING - memory_manager.py:126 - LLM Memory 召回失败，回退关键词匹配: Request timed out.
+2026-07-08 20:53:27,977 - agent - INFO - memory_manager.py:180 - 注入 Memory context: items=2
+2026-07-08 20:53:27,981 - agent - INFO - builtin_hooks.py:33 - [hook:BeforeModelCall] 准备调用模型: model=Qwen3.6-27B, messages=2

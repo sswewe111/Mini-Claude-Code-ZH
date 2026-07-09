@@ -1,0 +1,19 @@
+{
+  "id": "task_000003",
+  "subject": "实现 task_claim/task_complete 工具",
+  "description": "实现 task_claim 和 task_complete 工具，支持认领任务和完成任务，处理依赖解锁逻辑。",
+  "status": "completed",
+  "owner": "test_user",
+  "active_form": "",
+  "blocked_by": [
+    "task_000001"
+  ],
+  "blocks": [
+    "task_000004"
+  ],
+  "metadata": {
+    "completion_summary": "实现 task_claim/task_complete 工具，验证依赖解锁逻辑"
+  },
+  "created_at": "2026-07-07T22:08:59+08:00",
+  "updated_at": "2026-07-07T22:10:56+08:00"
+}

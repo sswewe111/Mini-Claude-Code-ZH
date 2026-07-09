@@ -1,0 +1,108 @@
+tools:
+  allow:
+    - bash
+    - read_file
+    - write_file
+    - edit_file
+    - todo
+    - task
+    - load_skill
+    - compact
+    - save_memory
+    - forget_memory
+    - task_create
+    - task_list
+    - task_get
+    - task_update
+    - task_claim
+    - task_complete
+    - task_cancel
+    - background_list
+    - background_get
+    - schedule_cron
+    - list_crons
+    - cancel_cron
+    - spawn_teammate
+    - team_send_message
+    - team_broadcast
+    - team_check_inbox
+    - team_list
+    - team_request_shutdown
+    - team_review_plan
+    - team_protocol_status
+    - team_submit_plan
+    - worktree_create
+    - worktree_bind
+    - worktree_list
+    - worktree_status
+    - worktree_keep
+    - worktree_remove
+  deny: []
+
+dangerous_commands:
+  - "rm -rf"
+  - "rm"
+  - "unlink"
+  - "shred"
+  - "trash"
+  - "trash-put"
+  - "gio trash"
+  - "del"
+  - "erase"
+  - "rd"
+  - "rmdir"
+  - "Remove-Item"
+  - "Remove-ItemProperty"
+  - "ri"
+  - "Remove-Variable"
+  - "Clear-Content"
+  - "Remove-Content"
+  - "Remove-Module"
+  - "Remove-PSDrive"
+  - "Remove-LocalUser"
+  - "Remove-LocalGroup"
+  - "Remove-LocalGroupMember"
+  - "[System.IO.File]::Delete"
+  - "[System.IO.Directory]::Delete"
+  - ".Delete("
+  - "os.remove"
+  - "os.unlink"
+  - "os.rmdir"
+  - "os.removedirs"
+  - "shutil.rmtree"
+  - "Path.unlink"
+  - ".unlink("
+  - ".rmdir("
+  - "send2trash"
+  - "fs.unlink"
+  - "fs.unlinkSync"
+  - "unlinkSync"
+  - "fs.rm"
+  - "fs.rmSync"
+  - "rmSync"
+  - "fs.rmdir"
+  - "fs.rmdirSync"
+  - "rmdirSync"
+  - "Deno.remove"
+  - "Deno.removeSync"
+  - "File.delete"
+  - "Files.delete"
+  - "deleteFile"
+  - "deleteDirectory"
+  - "deleteDir"
+  - "deleteSync"
+  - "delete("
+  - "-delete"
+  - "git clean"
+  - "git reset --hard"
+  - "/MIR"
+  - "Format-Volume"
+  - "shutdown"
+  - "reboot"
+
+approval:
+  mode: "ask"
+  required_tools:
+    - write_file
+    - edit_file
+    - worktree_remove

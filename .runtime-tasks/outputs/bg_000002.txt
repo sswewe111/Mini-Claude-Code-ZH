@@ -1,0 +1,8 @@
+shell: powershell
+
+command: Start-Sleep -Seconds 5; Write-Output "background done"
+
+exit_code: 0
+
+stdout:
+background done

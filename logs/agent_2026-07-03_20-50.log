@@ -1,0 +1,4 @@
+2026-07-03 20:52:20,374 - agent - INFO - bash_tools.py:20 - 执行 powershell 命令: Write-Output polish-ok
+2026-07-03 20:52:20,453 - agent - INFO - file_tools.py:20 - 写入文件: data/polish_check.txt
+2026-07-03 20:52:20,457 - agent - INFO - file_tools.py:9 - 读取文件: data/polish_check.txt
+2026-07-03 20:52:23,945 - agent - INFO - bash_tools.py:39 - powershell 命令结束，exit_code=0

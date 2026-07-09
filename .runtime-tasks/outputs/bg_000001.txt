@@ -1,0 +1,8 @@
+shell: powershell
+
+command: Start-Sleep -Seconds 1; Write-Output hook
+
+exit_code: 0
+
+stdout:
+hook

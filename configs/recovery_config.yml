@@ -1,0 +1,33 @@
+ENABLE_RECOVERY: true
+MAX_TRANSIENT_RETRIES: 3
+MAX_CONTEXT_RECOVERY_RETRIES: 1
+MAX_CONTINUATION_RETRIES: 2
+BACKOFF_BASE_SECONDS: 1
+BACKOFF_MAX_SECONDS: 20
+BACKOFF_JITTER_RATIO: 0.25
+FALLBACK_AFTER_OVERLOADS: 3
+FALLBACK_MODEL_ID: ""
+RETRY_STATUS_CODES:
+  - 429
+  - 500
+  - 502
+  - 503
+  - 504
+  - 529
+CONTEXT_ERROR_KEYWORDS:
+  - "context length"
+  - "maximum context"
+  - "prompt too long"
+  - "too many tokens"
+  - "tokens exceed"
+  - "context_length_exceeded"
+  - "413"
+TRANSIENT_ERROR_KEYWORDS:
+  - "rate limit"
+  - "too many requests"
+  - "overloaded"
+  - "temporarily unavailable"
+  - "timeout"
+  - "timed out"
+  - "connection error"
+  - "connection reset"

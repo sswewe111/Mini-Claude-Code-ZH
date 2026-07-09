@@ -1,0 +1,3 @@
+2026-07-04 17:46:12,068 - agent - INFO - subagent_handlers.py:9 - task 工具启动子 Agent: mode=config
+2026-07-04 17:46:12,069 - agent - ERROR - task_subagent.py:78 - task 工具缺少 runtime_context，无法启动子 Agent
+2026-07-04 17:46:12,069 - agent - INFO - subagent_handlers.py:16 - task 工具返回子 Agent 结果: length=53

@@ -1,0 +1,14 @@
+ENABLE_CRON_SCHEDULER: true
+CRON_TASK_DIR: ".runtime-tasks"
+CRON_TASK_FILE: ".runtime-tasks/scheduled_tasks.json"
+CRON_EVENT_FILE: ".runtime-tasks/scheduled_events.jsonl"
+CRON_LOCK_FILE: ".runtime-tasks/scheduled.lock"
+CRON_ID_PREFIX: "cron_"
+CRON_SESSION_ID_PREFIX: "cron_session_"
+CRON_EVENT_ID_PREFIX: "cron_evt_"
+CHECK_INTERVAL_SECONDS: 1
+QUEUE_PROCESSOR_INTERVAL_SECONDS: 0.2
+MAX_CRON_JOBS: 50
+MAX_TRIGGERED_EVENTS_PER_TURN: 5
+ENABLE_DURABLE_CRON: true
+ENABLE_SESSION_CRON: true

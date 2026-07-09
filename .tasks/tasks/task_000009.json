@@ -1,0 +1,17 @@
+{
+  "id": "task_000009",
+  "subject": "s17-总结自治管理器",
+  "description": "读取 managers/autonomous_manager.py，总结 scan_ready_tasks、try_claim_next、format_claimed_task 的作用。完成后调用 task_complete。",
+  "status": "completed",
+  "owner": "auto_bob",
+  "active_form": "",
+  "blocked_by": [
+    "task_000008"
+  ],
+  "blocks": [],
+  "metadata": {
+    "completion_summary": "读取 managers/autonomous_manager.py，总结三个方法：\n\n1. scan_ready_tasks(teammate_name, role) — 扫描看板中 ready 且未被认领的任务，支持 role metadata 过滤，记录 scan 事件到 .team/autonomous_events.jsonl\n\n2. try_claim_next(teammate_name, role) — 检查 ENABLE_AUTONOMOUS_AGENTS 开关 → 调用 scan_ready_tasks → 认领首个任务（上限 AUTONOMOUS_MAX_CLAIMS_PER_IDLE=1），返回 AutonomousClaimResult\n\n3. format_claimed_task(task, teammate_name) — 格式化 <claimed_task> XML 块，包含 id/subject/owner/blocked_by/description 及完成指令"
+  },
+  "created_at": "2026-07-09T17:48:45+08:00",
+  "updated_at": "2026-07-09T17:52:49+08:00"
+}

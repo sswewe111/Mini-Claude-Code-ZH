@@ -1,0 +1,16 @@
+ENABLE_BACKGROUND_TASKS: true
+RUNTIME_TASK_DIR: ".runtime-tasks"
+OUTPUT_DIR: ".runtime-tasks/outputs"
+TASK_ID_PREFIX: "bg_"
+MAX_NOTIFICATION_OUTPUT_CHARS: 1200
+MAX_BACKGROUND_TASKS_IN_LIST: 50
+DEFAULT_COMMAND_TIMEOUT_SECONDS: 0
+SLOW_COMMAND_KEYWORDS:
+  - "npm install"
+  - "pip install"
+  - "pytest"
+  - "npm test"
+  - "npm run build"
+  - "docker build"
+  - "cargo build"
+  - "make"

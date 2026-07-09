@@ -1,0 +1,6 @@
+2026-07-04 21:48:14,757 - agent - INFO - skill_manager.py:116 - 技能目录扫描完成: count=6
+2026-07-04 21:48:31,381 - agent - INFO - skill_manager.py:116 - 技能目录扫描完成: count=6
+2026-07-04 21:48:31,421 - agent - INFO - skill_manager.py:116 - 技能目录扫描完成: count=6
+2026-07-04 21:48:31,441 - agent - INFO - skill_manager.py:116 - 技能目录扫描完成: count=6
+2026-07-04 21:48:31,451 - agent - INFO - base_handlers.py:32 - 加载技能: ../.env
+2026-07-04 21:48:31,488 - agent - INFO - base_handlers.py:32 - 加载技能: docx

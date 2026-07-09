@@ -1,0 +1,10 @@
+2026-07-03 22:44:54,026 - agent - INFO - agent_loop.py:122 - Agent 程序启动
+2026-07-03 22:44:54,026 - agent - INFO - builtin_hooks.py:6 - [hook:SessionStart] Agent 会话启动
+2026-07-03 22:44:55,687 - agent - INFO - agent_loop.py:52 - 开始第 1 轮 Agent 循环
+2026-07-03 22:44:55,688 - agent - INFO - builtin_hooks.py:11 - [hook:BeforeModelCall] 准备调用模型: model=Qwen3.6-27B, messages=1
+2026-07-03 22:44:57,217 - agent - INFO - builtin_hooks.py:20 - [hook:AfterModelCall] 模型返回: finish_reason=tool_calls, tool_calls=1
+2026-07-03 22:44:57,218 - agent - INFO - agent_loop.py:111 - 开始执行工具: bash
+2026-07-03 22:44:57,219 - agent - INFO - dispatcher.py:50 - 分发工具调用: bash
+2026-07-03 22:44:57,220 - agent - INFO - dispatcher.py:51 - 工具参数: {'command': 'dir /b'}
+2026-07-03 22:44:57,220 - agent - INFO - builtin_hooks.py:29 - [hook:PreToolUse] 工具执行前: bash, args={'command': 'dir /b'}
+2026-07-03 22:44:57,221 - agent - INFO - dispatcher.py:78 - 权限通过: bash, 原因: permission allowed

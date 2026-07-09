@@ -1,0 +1,1 @@
+{"time": "2026-07-07T22:49:28+08:00", "event": "start", "bg_id": "bg_000001", "command": "Start-Sleep -Seconds 1; Write-Output 123", "owner": "main"}

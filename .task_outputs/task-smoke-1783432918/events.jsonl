@@ -1,0 +1,5 @@
+{"time": "2026-07-07T22:01:58+08:00", "event": "create", "task_id": "task_000001", "blocked_by": []}
+{"time": "2026-07-07T22:01:58+08:00", "event": "create", "task_id": "task_000002", "blocked_by": ["task_000001"]}
+{"time": "2026-07-07T22:01:58+08:00", "event": "claim", "task_id": "task_000001", "owner": "alice"}
+{"time": "2026-07-07T22:01:58+08:00", "event": "complete", "task_id": "task_000001", "owner": "alice", "unblocked": ["task_000002"]}
+{"time": "2026-07-07T22:01:58+08:00", "event": "claim", "task_id": "task_000002", "owner": "bob"}

@@ -1,0 +1,44 @@
+2026-07-09 17:55:00,873 - agent - INFO - builtin_hooks.py:184 - [hook:PreToolUse] 工具执行前: team_check_inbox, args={'agent': 'auto_alice'}
+2026-07-09 17:55:00,875 - agent - INFO - builtin_hooks.py:198 - [hook:PreToolUse] 权限通过: team_check_inbox, 原因: permission allowed
+2026-07-09 17:55:00,876 - agent - INFO - builtin_hooks.py:218 - [hook:PostToolUse] 工具执行后: team_check_inbox, output_length=22
+2026-07-09 17:55:00,886 - agent - INFO - memory_manager.py:113 - 开始 LLM Memory 召回: candidates=4, timeout=8.0s
+2026-07-09 17:55:01,921 - agent - WARNING - memory_manager.py:126 - LLM Memory 召回失败，回退关键词匹配: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-09 17:55:01,926 - agent - INFO - memory_manager.py:180 - 注入 Memory context: items=4
+2026-07-09 17:55:01,926 - agent - INFO - compact_manager.py:145 - 已裁剪中间历史消息: snipped=1, remaining=51
+2026-07-09 17:55:01,927 - agent - INFO - builtin_hooks.py:41 - [hook:BeforeModelCall] 准备调用模型: model=deepseek-v4-flash, messages=51
+2026-07-09 17:55:02,208 - agent - INFO - builtin_hooks.py:184 - [hook:PreToolUse] 工具执行前: bash, args={'command': 'powershell -Command "Get-Item .team/autonomous_events.jsonl | Format-Table Length, LastWriteTime, Name"'}
+2026-07-09 17:55:02,209 - agent - INFO - builtin_hooks.py:198 - [hook:PreToolUse] 权限通过: bash, 原因: permission allowed
+2026-07-09 17:55:02,465 - agent - ERROR - recovery_manager.py:75 - [recovery] 不可恢复的模型调用错误: type=unknown
+Traceback (most recent call last):
+  File "D:\学习资料整理\Interview Record\Mini Claude Code-zh\managers\recovery_manager.py", line 51, in create_chat_completion
+    response = client.chat.completions.create(
+  File "D:\anaconda3\envs\claude\lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "D:\anaconda3\envs\claude\lib\site-packages\openai\resources\chat\completions\completions.py", line 1211, in create
+    return self._post(
+  File "D:\anaconda3\envs\claude\lib\site-packages\openai\_base_client.py", line 1314, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "D:\anaconda3\envs\claude\lib\site-packages\openai\_base_client.py", line 1087, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.APIStatusError: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-09 17:55:02,471 - agent - ERROR - team_manager.py:353 - [team] teammate 线程异常: auto_alice
+Traceback (most recent call last):
+  File "D:\学习资料整理\Interview Record\Mini Claude Code-zh\managers\team_manager.py", line 344, in _run_teammate_thread
+    run_teammate_agent(
+  File "D:\学习资料整理\Interview Record\Mini Claude Code-zh\subagents\teammate_agent.py", line 270, in run_teammate_agent
+    response = recovery_manager.create_chat_completion(
+  File "D:\学习资料整理\Interview Record\Mini Claude Code-zh\managers\recovery_manager.py", line 51, in create_chat_completion
+    response = client.chat.completions.create(
+  File "D:\anaconda3\envs\claude\lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "D:\anaconda3\envs\claude\lib\site-packages\openai\resources\chat\completions\completions.py", line 1211, in create
+    return self._post(
+  File "D:\anaconda3\envs\claude\lib\site-packages\openai\_base_client.py", line 1314, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "D:\anaconda3\envs\claude\lib\site-packages\openai\_base_client.py", line 1087, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.APIStatusError: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-09 17:55:07,303 - agent - INFO - builtin_hooks.py:134 - [hook:AfterModelCall] 模型返回: finish_reason=stop, tool_calls=0
+2026-07-09 17:55:07,308 - agent - INFO - memory_manager.py:281 - 开始自动提取 Memory: timeout=8.0s
+2026-07-09 17:55:07,781 - agent - WARNING - memory_manager.py:294 - 自动提取 Memory 失败: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-07-09 17:55:07,781 - agent - INFO - agent_loop.py:141 - Agent 循环结束

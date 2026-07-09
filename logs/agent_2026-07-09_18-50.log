@@ -1,0 +1,11 @@
+2026-07-09 18:54:13,610 - agent - INFO - skill_manager.py:106 - 技能目录扫描完成: count=6
+2026-07-09 18:54:13,792 - agent - INFO - agent_loop.py:183 - Agent 程序启动
+2026-07-09 18:54:13,792 - agent - INFO - builtin_hooks.py:15 - [hook:SessionStart] Agent 会话启动
+2026-07-09 18:54:13,795 - agent - INFO - builtin_hooks.py:21 - [hook:SessionStart] Memory 已初始化
+2026-07-09 18:54:13,798 - agent - INFO - builtin_hooks.py:29 - [hook:SessionStart] Cron Scheduler 存储已初始化
+2026-07-09 18:54:13,803 - agent - INFO - builtin_hooks.py:36 - [hook:SessionStart] Agent Teams 存储已初始化
+2026-07-09 18:54:13,805 - agent - INFO - builtin_hooks.py:43 - [hook:SessionStart] Worktree Isolation 存储已初始化
+2026-07-09 18:54:15,865 - agent - INFO - team_manager.py:53 - [team] Agent Teams 已初始化
+2026-07-09 18:54:15,869 - agent - INFO - cron_manager.py:100 - Cron Scheduler 已启动: workdir=D:\学习资料整理\Interview Record\Mini Claude Code-zh
+2026-07-09 18:54:15,870 - agent - INFO - agent_loop.py:61 - 开始第 1 轮 Agent 循环
+2026-07-09 18:54:15,876 - agent - INFO - memory_manager.py:113 - 开始 LLM Memory 召回: candidates=4, timeout=8.0s

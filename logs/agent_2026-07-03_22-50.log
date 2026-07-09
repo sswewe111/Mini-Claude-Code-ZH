@@ -1,0 +1,15 @@
+2026-07-03 22:52:39,533 - agent - INFO - dispatcher.py:49 - 分发工具调用: bash
+2026-07-03 22:52:39,534 - agent - INFO - dispatcher.py:50 - 工具参数: {'command': 'cmd /c del /f /q summary.txt'}
+2026-07-03 22:52:39,534 - agent - INFO - builtin_hooks.py:30 - [hook:PreToolUse] 工具执行前: bash, args={'command': 'cmd /c del /f /q summary.txt'}
+2026-07-03 22:52:39,534 - agent - WARNING - builtin_hooks.py:51 - [hook:PreToolUse] 权限拒绝: bash, 原因: dangerous command keyword: del
+2026-07-03 22:52:39,535 - agent - WARNING - dispatcher.py:64 - PreToolUse Hook 阻止工具执行: bash, 原因: Permission denied: dangerous command keyword: del
+2026-07-03 22:52:50,760 - agent - INFO - dispatcher.py:49 - 分发工具调用: bash
+2026-07-03 22:52:50,761 - agent - INFO - dispatcher.py:50 - 工具参数: {'command': 'Write-Output ok'}
+2026-07-03 22:52:50,761 - agent - WARNING - builtin_hooks.py:51 - [hook:PreToolUse] 权限拒绝: bash, 原因: dangerous command keyword: del
+2026-07-03 22:52:50,762 - agent - WARNING - dispatcher.py:64 - PreToolUse Hook 阻止工具执行: bash, 原因: Permission denied: dangerous command keyword: del
+2026-07-03 22:53:00,574 - agent - INFO - dispatcher.py:49 - 分发工具调用: bash
+2026-07-03 22:53:00,575 - agent - INFO - dispatcher.py:50 - 工具参数: {'command': 'Write-Output ok'}
+2026-07-03 22:53:00,575 - agent - INFO - builtin_hooks.py:30 - [hook:PreToolUse] 工具执行前: bash, args={'command': 'Write-Output ok'}
+2026-07-03 22:53:00,576 - agent - INFO - builtin_hooks.py:42 - [hook:PreToolUse] 权限通过: bash, 原因: permission allowed
+2026-07-03 22:53:04,046 - agent - INFO - dispatcher.py:73 - 工具执行完成: bash
+2026-07-03 22:53:04,046 - agent - INFO - builtin_hooks.py:62 - [hook:PostToolUse] 工具执行后: bash, output_length=43

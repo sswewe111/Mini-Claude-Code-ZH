@@ -1,0 +1,83 @@
+{
+  "team_id": "default",
+  "lead": "lead",
+  "updated_at": "2026-07-09T17:55:02+08:00",
+  "members": [
+    {
+      "name": "alice",
+      "role": "team config reader",
+      "prompt": "读取 configs/team_config.yml，总结 Agent Teams 的关键配置，包括 TEAM_DIR、TEAM_INBOX_DIR、MAX_TEAMMATES、MAX_TEAMMATE_TURNS。完成后必须调用 team_send_message(to=\"lead\", msg_type=\"result\", content=...) 把结果发给 lead。",
+      "status": "idle",
+      "thread_name": "teammate-alice",
+      "created_at": "2026-07-08T22:30:19+08:00",
+      "updated_at": "2026-07-08T22:30:30+08:00",
+      "last_seen_at": "2026-07-08T22:30:30+08:00",
+      "turn_count": 3,
+      "metadata": {}
+    },
+    {
+      "name": "auto_alice",
+      "role": "autonomous config reader",
+      "prompt": "你是 s17 Autonomous Agents 测试 teammate。不要修改任何文件，不要调用 write_file/edit_file。完成初始说明后进入 idle，自动扫描任务看板并认领 ready 任务。认领任务后按 <claimed_task> 完成任务，必须调用 task_complete(task_id=..., owner=\"auto_alice\", summary=...)，然后用 team_send_message(to=\"lead\", msg_type=\"result\", content=...) 汇报。",
+      "status": "failed",
+      "thread_name": "teammate-auto_alice",
+      "created_at": "2026-07-09T17:34:00+08:00",
+      "updated_at": "2026-07-09T17:55:02+08:00",
+      "last_seen_at": "2026-07-09T17:55:02+08:00",
+      "turn_count": 30,
+      "metadata": {
+        "error": "Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}"
+      }
+    },
+    {
+      "name": "auto_bob",
+      "role": "autonomous code reader",
+      "prompt": "你是 s17 Autonomous Agents 测试 teammate。不要修改任何文件，不要调用 write_file/edit_file。完成初始说明后进入 idle，自动扫描任务看板并认领 ready 任务。认领任务后按 <claimed_task> 完成任务，必须调用 task_complete(task_id=..., owner=\"auto_bob\", summary=...)，然后用 team_send_message(to=\"lead\", msg_type=\"result\", content=...) 汇报。",
+      "status": "running",
+      "thread_name": "teammate-auto_bob",
+      "created_at": "2026-07-09T17:34:05+08:00",
+      "updated_at": "2026-07-09T17:54:53+08:00",
+      "last_seen_at": "2026-07-09T17:54:53+08:00",
+      "turn_count": 47,
+      "metadata": {}
+    },
+    {
+      "name": "bob",
+      "role": "team tools reader",
+      "prompt": "读取 tools_configs/team_configs.py 和 managers/team_manager.py，总结 Agent Teams 暴露了哪些团队工具，以及 TeamManager 如何启动 teammate 线程和发送消息。完成后必须调用 team_send_message(to=\"lead\", msg_type=\"result\", content=...) 把结果发给 lead。",
+      "status": "idle",
+      "thread_name": "teammate-bob",
+      "created_at": "2026-07-08T22:30:19+08:00",
+      "updated_at": "2026-07-08T22:30:36+08:00",
+      "last_seen_at": "2026-07-08T22:30:36+08:00",
+      "turn_count": 3,
+      "metadata": {}
+    },
+    {
+      "name": "protocol_alice",
+      "role": "protocol shutdown tester",
+      "prompt": "读取 configs/team_config.yml，总结 ENABLE_TEAM_PROTOCOLS、TEAM_REQUEST_FILE、TEAM_IDLE_POLL_SECONDS、TEAM_IDLE_NOTIFY_LEAD。完成后用 team_send_message(to=\"lead\", msg_type=\"result\", content=...) 汇报，然后保持 idle 等待 Lead 的 shutdown_request。",
+      "status": "stopped",
+      "thread_name": "teammate-protocol_alice",
+      "created_at": "2026-07-08T23:10:47+08:00",
+      "updated_at": "2026-07-08T23:11:11+08:00",
+      "last_seen_at": "2026-07-08T23:11:11+08:00",
+      "turn_count": 3,
+      "metadata": {}
+    },
+    {
+      "name": "protocol_bob",
+      "role": "plan approval tester",
+      "prompt": "不要修改任何文件。请先调用 team_submit_plan 提交一个计划审批请求，计划内容是\"阅读 managers/team_manager.py 和 managers/team_protocol_manager.py，总结 Team Protocols 的 request_id 匹配机制\"，risk_level 使用 medium，target_files 包含 managers/team_manager.py 和 managers/team_protocol_manager.py。提交后等待 Lead 审批；收到批准后再读取这些文件并用 team_send_message(to=\"lead\", msg_type=\"result\", content=...) 汇报。",
+      "status": "failed",
+      "thread_name": "teammate-protocol_bob",
+      "created_at": "2026-07-08T23:11:38+08:00",
+      "updated_at": "2026-07-08T23:12:13+08:00",
+      "last_seen_at": "2026-07-08T23:12:13+08:00",
+      "turn_count": 10,
+      "metadata": {
+        "error": "teammate protocol_bob 超过最大轮数 10，已停止。"
+      }
+    }
+  ]
+}

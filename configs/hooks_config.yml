@@ -1,0 +1,8 @@
+enabled: false
+timeout_seconds: 30
+
+trust:
+  require_marker: false
+  marker_path: ".mini_claude_code_trusted"
+
+events: {}

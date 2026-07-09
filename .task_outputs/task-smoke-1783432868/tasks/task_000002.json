@@ -1,0 +1,15 @@
+{
+  "id": "task_000002",
+  "subject": "api",
+  "description": "write api",
+  "status": "in_progress",
+  "owner": "bob",
+  "active_form": "",
+  "blocked_by": [
+    "task_000001"
+  ],
+  "blocks": [],
+  "metadata": {},
+  "created_at": "2026-07-07T22:01:08+08:00",
+  "updated_at": "2026-07-07T22:01:08+08:00"
+}

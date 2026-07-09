@@ -1,0 +1,17 @@
+{
+  "id": "task_000001",
+  "subject": "schema",
+  "description": "design schema",
+  "status": "completed",
+  "owner": "alice",
+  "active_form": "",
+  "blocked_by": [],
+  "blocks": [
+    "task_000002"
+  ],
+  "metadata": {
+    "completion_summary": "done"
+  },
+  "created_at": "2026-07-07T22:01:08+08:00",
+  "updated_at": "2026-07-07T22:01:08+08:00"
+}
