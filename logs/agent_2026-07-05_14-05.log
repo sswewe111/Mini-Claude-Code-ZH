@@ -1,3 +1,0 @@
-2026-07-05 14:07:56,612 - agent - INFO - memory_manager.py:155 - 保存 Memory: private/feedback codex-temp-test-memory.md
-2026-07-05 14:07:56,628 - agent - INFO - memory_manager.py:168 - 删除 Memory: codex-temp-test-memory.md, reason=测试完成删除
-2026-07-05 14:08:53,562 - agent - INFO - skill_manager.py:106 - 技能目录扫描完成: count=6

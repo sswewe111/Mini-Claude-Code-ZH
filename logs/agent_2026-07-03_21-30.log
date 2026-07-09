@@ -1,8 +1,0 @@
-2026-07-03 21:30:42,945 - agent - INFO - dispatcher.py:40 - 分发工具调用: read_file
-2026-07-03 21:30:42,946 - agent - INFO - dispatcher.py:41 - 工具参数: {'path': 'data/秋天.txt', 'limit': 3}
-2026-07-03 21:30:42,947 - agent - INFO - dispatcher.py:51 - 权限通过: read_file, 原因: permission allowed
-2026-07-03 21:30:42,947 - agent - INFO - file_tools.py:9 - 读取文件: data/秋天.txt
-2026-07-03 21:30:42,948 - agent - INFO - dispatcher.py:55 - 工具执行完成: read_file
-2026-07-03 21:30:57,924 - agent - INFO - dispatcher.py:40 - 分发工具调用: bash
-2026-07-03 21:30:57,925 - agent - INFO - dispatcher.py:41 - 工具参数: {'command': 'Remove-Item data/test.txt'}
-2026-07-03 21:30:57,925 - agent - WARNING - dispatcher.py:49 - 权限拒绝: bash, 原因: dangerous command keyword: Remove-Item

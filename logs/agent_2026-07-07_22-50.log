@@ -1,2 +1,0 @@
-2026-07-07 22:50:21,474 - agent - INFO - skill_manager.py:106 - 技能目录扫描完成: count=6
-2026-07-07 22:50:26,539 - agent - INFO - builtin_hooks.py:59 - [hook:BeforeModelCall] 注入后台任务通知: count=1

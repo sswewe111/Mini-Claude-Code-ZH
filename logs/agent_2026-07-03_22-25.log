@@ -1,7 +1,0 @@
-2026-07-03 22:29:36,005 - agent - INFO - dispatcher.py:50 - 分发工具调用: bash
-2026-07-03 22:29:36,005 - agent - INFO - dispatcher.py:51 - 工具参数: {'command': 'cmd /c del /f /q summary.txt'}
-2026-07-03 22:29:36,005 - agent - INFO - builtin_hooks.py:29 - [hook:PreToolUse] 工具执行前: bash, args={'command': 'cmd /c del /f /q summary.txt'}
-2026-07-03 22:29:36,006 - agent - WARNING - dispatcher.py:73 - 权限拒绝: bash, 原因: dangerous command keyword: del
-2026-07-03 22:29:46,894 - agent - INFO - dispatcher.py:50 - 分发工具调用: bash
-2026-07-03 22:29:46,895 - agent - INFO - dispatcher.py:51 - 工具参数: {'command': 'Write-Output ok'}
-2026-07-03 22:29:46,898 - agent - WARNING - dispatcher.py:65 - PreToolUse Hook 阻止工具执行: bash, 原因: test block

@@ -1,6 +1,0 @@
-2026-07-04 14:43:13,021 - agent - INFO - builtin_hooks.py:30 - [hook:BeforeModelCall] 注入 Todo reminder
-2026-07-04 14:43:13,023 - agent - INFO - builtin_hooks.py:13 - [hook:BeforeModelCall] 准备调用模型: model=None, messages=1
-2026-07-04 14:43:13,024 - agent - INFO - builtin_hooks.py:36 - [hook:AfterModelCall] 模型返回: finish_reason=tool_calls, tool_calls=1
-2026-07-04 14:43:13,024 - agent - INFO - builtin_hooks.py:57 - [hook:AfterModelCall] 本轮未调用 todo，累计未更新轮数
-2026-07-04 14:43:13,024 - agent - INFO - builtin_hooks.py:36 - [hook:AfterModelCall] 模型返回: finish_reason=tool_calls, tool_calls=1
-2026-07-04 14:43:13,025 - agent - INFO - builtin_hooks.py:53 - [hook:AfterModelCall] 本轮已调用 todo，不累计未更新轮数
